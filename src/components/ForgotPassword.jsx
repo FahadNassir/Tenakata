@@ -1,39 +1,41 @@
 import React from 'react'
 import promo from '../assets/promo.jpg'
 import logo from '../assets/logo.jpg'
+import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
+    const navigate = useNavigate()
   return (
-    <div className='flex w-customWidth h-customHeight border-mainbg border-8 rounded-2xl'>
-        <span className='w-1/2 bg-white rounded-2xl px-9 py-12'>
+    <div className='flex flex-col lg:flex-row w-full lg:w-customWidth h-full lg:h-customHeight border-mainbg border-8 rounded-2xl'>
+        <span className='w-full h-full lg:w-1/2 bg-white rounded-l-2xl lg:rounded-l-2xl px-9 py-12'>
             <div className='flex justify-between mb-16'>
-                <span className='h-logoHeight w-logoWidth'>
+                <span className='h-logoHeight w-logoWidth cursor-pointer' onClick={() => navigate("/")}>
                     <img src={logo} alt="logo" />
                 </span>
                 <span className='font-extrabold text-xl'>
-                    LOGIN
+                    FORGOT PASSWORD
                 </span>
             </div>
-            <div className='mb-6 font-bold text-lg'>
-              <h1>Set new password</h1>
-              <h2>please enter the new password as per the following instructions</h2>
+            <div className='mb-6'>
+                <h1 className='font-bold text-lg'>Forgot password</h1>
+                <h2>Please enter the email shared during onboarding</h2>
             </div>
              
              <form action="">
-                <fieldset className='h-inputHeight w-inputWidth border border-inputborder mb-3 rounded-lg'>
-                    <legend className='ml-5'>New password</legend>
-                    <input type="text" />
-                </fieldset>
-                <fieldset className='h-inputHeight w-inputWidth border border-inputborder mb-6 rounded-lg'>
-                    <legend className='ml-5'>Confirm password</legend>
-                    <input type="text" />
-                </fieldset>
-               
-                <button className='w-inputWidth h-inputHeight bg-buttonBlue rounded-xl text-white font-bold'>RESET PASSWORD</button>
+                <div className="input-container">
+                    <label for="email">Enter email</label>
+                    <input type="email" id="email" name="email" />
+                </div>
+                
+                <button className='w-full h-inputHeight bg-buttonBlue rounded-xl
+                    cursor-pointer lg:mt-24
+                text-white font-semibold'
+                    onClick={() => navigate("/reset-password")}
+                >SUBMIT</button>
              </form>
         </span>
         <span className='w-1/2'>
-            <img src={promo} alt="promo-image" className='object-cover h-full w-full rounded-2xl'/>
+            <img src={promo} alt="promo-image" className='w-0 h-0 lg:object-cover lg:h-full lg:w-full lg:rounded-2xl'/>
         </span>
     </div>
   )
