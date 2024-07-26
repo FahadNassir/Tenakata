@@ -24,8 +24,9 @@ const Content = () => {
       {/* section-one */}
 
       <div className='grid lg:flex lg:flex-row grid-cols-2 grid-rows-2 gap-x-2 gap-y-2 
+      md:grid md:grid-cols-3 md:grid-rows-2
       lg:justify-between md:w-fit mb-3 xl:flex xl:gap-4'>
-        <span className='top-recs lg:w-64 lg:h-28 w-56 h-24'>
+        <span className='top-recs lg:w-64 lg:h-28 w-56 h-24 '>
           <div className='lg-sq lg:w-10 lg:h-10 lg:mr-5'><div className='sm-sq lg:h-radius lg:w-radius'></div></div>
           <div>
             <h1 className='title'>Total investment</h1>
@@ -74,9 +75,10 @@ const Content = () => {
             <Graph />
           </div>
         </span>
-        <span className='bg-statusColor lg:w-statuswidth lg:h-statusheight lg:p-9 lg:justify-between 
-         xl:flex xl:flex-row xl:gap-x-20 xl:p-20
-        items-center w-fit h-fit rounded-xl flex text-white'>
+        <span className='bg-statusColor -statuswidth h-statusheight p-4 flex text-white rounded-xl justify-between
+         lg:w-statuswidth lg:h-statusheight lg:p-9 lg:justify-between
+         xl:px-24
+        '>
            <span className='flex items-start flex-col'>
             <h1 className='mb-5 font-semibold'>Status</h1>
             <div className='stats-circle flex flex-col items-center justify-center'>
