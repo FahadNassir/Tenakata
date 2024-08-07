@@ -15,7 +15,9 @@ export default {
         inputbg:"#FF9088",
         stylebg:"#FFDFF5",
         delCol:"#40C96F",
-        pendCol:"#FF6E6E"
+        pendCol:"#FF6E6E",
+        tablebg:"#F6F6F6",
+        trashColor:"#2DC400"
       },
       height: {
         customHeight: "80%",
@@ -38,12 +40,16 @@ export default {
         contentW:"85%",
         cshWidht:"69%",
         trackW:"27%",
-        radius:"10px"
+        radius:"10px",
       },
       fontSize: {
         login: "30px",
-        loginbtn:"25px"
+        loginbtn:"25px",
+        trash:"70px"
       },
+      screens:{
+        xs:"250px"
+      }
     },
   },
   plugins: [],

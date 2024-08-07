@@ -119,29 +119,29 @@ const Content = () => {
               <option>Today</option>
             </select>
           </div>
-          <table>
+          <table className='table'>
             <thead>
               <tr>
-                <th>Investor no</th>
-                <th>Investor name</th>
-                <th>Amount</th>
-                <th>Product id</th>
-                <th>Status</th>
+                <th className='t-h'>Investor no</th>
+                <th className='t-h'>Investor name</th>
+                <th className='t-h'>Amount</th>
+                <th className='t-h'>Product id</th>
+                <th className='t-h'>Status</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>#000123</td>
-                <td>Fintree Ltd</td>
-                <td>123.890</td>
-                <td>#9809712</td>
+                <td className='t-d'>#000123</td>
+                <td  className='t-d'>Fintree Ltd</td>
+                <td className='t-d'>123.890</td>
+                <td className='t-d'>#9809712</td>
                 <td className='text-delCol'>Delivered</td>
               </tr>
               <tr>
-                <td>#000123</td>
-                <td>Kamsari Ltd</td>
-                <td>123.890</td>
-                <td>#8201297</td>
+                <td className='t-d'>#000123</td>
+                <td className='t-d'>Kamsari Ltd</td>
+                <td className='t-d'>123.890</td>
+                <td className='t-d'>#8201297</td>
                 <td className='text-pendCol'>Pending</td>
               </tr>
             </tbody>
@@ -154,25 +154,25 @@ const Content = () => {
               <option>Today</option>
             </select>
           </div>
-          <table>
+          <table className='table'>
             <thead>
               <tr>
-                <th>Investors</th>
-                <th>Amount</th>
+                <th className='t-h'>Investors</th>
+                <th className='t-h'>Amount</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Fintree Ltd</td>
-                <td>123.890</td>
+                <td className='t-d'>Fintree Ltd</td>
+                <td className='t-d'>123.890</td>
               </tr>
               <tr>
-                <td>Kamsari Ltd</td>
-                <td>1442.235</td>
+                <td className='t-d'>Kamsari Ltd</td>
+                <td className='t-d'>1442.235</td>
               </tr>
               <tr>
-                <td>Samarinda Ltd</td>
-                <td>880.265</td>
+                <td className='t-d'>Samarinda Ltd</td>
+                <td className='t-d'>880.265</td>
               </tr>
             </tbody>
           </table>
