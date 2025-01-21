@@ -13,6 +13,7 @@ const Dashboard = () => {
             <Navbar />
             <Content />
         </span>
+        {alert("click investor management on the side menu to view the rest of the project")}
     </div>
   )
 }

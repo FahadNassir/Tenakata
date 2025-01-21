@@ -6,6 +6,7 @@ const LoginPage = () => {
     <div className='loginPage'>
         <Login />
         <p>© 2023 Tenakata is Licensed by the Central Bank of Kenya. All rights reserved.</p>
+        {alert("click the login button to proceed")}
     </div>
   )
 }

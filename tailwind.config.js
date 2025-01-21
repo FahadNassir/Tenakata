@@ -17,7 +17,8 @@ export default {
         delCol:"#40C96F",
         pendCol:"#FF6E6E",
         tablebg:"#F6F6F6",
-        trashColor:"#2DC400"
+        trashColor:"#2DC400",
+        formatB:"#B4B5BB"
       },
       height: {
         customHeight: "80%",
@@ -41,6 +42,7 @@ export default {
         cshWidht:"69%",
         trackW:"27%",
         radius:"10px",
+        buttonW:"238px"
       },
       fontSize: {
         login: "30px",
